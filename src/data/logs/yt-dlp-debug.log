@@ -1,0 +1,240 @@
+[2026-02-22 16:46:42] Attempt=default Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 16:46:45] Attempt=dash-fallback Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 16:46:48] Attempt=mp4-fallback Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 16:46:51] Attempt=client-fallback Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 16:46:54] Attempt=cookies-edge Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 16:46:57] Attempt=cookies-chrome Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 16:47:00] Attempt=cookies-firefox Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 16:53:06] Attempt=default Url=https://www.youtube.com/watch?v=iCdcZfd7TrE
+  https://rr1---sn-bvvbaxivnuxqjvhj5nu-n4vz.googlevideo.com/videoplayback?expire=1771829583&ei=76SbafnUI9uYsfIPmsuTkQg&ip=2601%3A645%3Ad00%3Aeb30%3A3cd2%3A8319%3A688b%3A6090&id=o-AB7afCVIS4JCsaf1zi9XPZ1XIi4uDFmYKbIIULaTT264&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=330&met=1771807983%2C&mh=mf&mm=31%2C29&mn=sn-bvvbaxivnuxqjvhj5nu-n4vz%2Csn-o097znzk&ms=au%2Crdu&mv=m&mvi=1&pl=39&rms=au%2Cau&initcwndbps=4301250&bui=AVNa5-xSH5ZzWvuhCRUZczJNESWMLxQSiCbYtThGl7bMBap1blAP0ARXRx8r1oWSEmKIUi9qhLGvO9EA&spc=6dlaFIOQwtOVTLPlMdwd&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=24.798&lmt=1750793771752291&mt=1771807512&fvip=3&fexp=51552689%2C51565116%2C51565682%2C51580968&c=ANDROID_VR&txp=8218224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJEij0EwRQIgR1LSqK5GLQYAFwTzGl_egM-DtOSXkwsK_U_6w43NmYUCIQCfe7P5VhXMdQgY-il02rhCYYXl7FYYNCIGBVtP9xsErA%3D%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRAIgFMBF-FtbX2GF42-S_KEX8Dezrd2a7gRIRFIUVvIzbmkCIBgvvZQB3C9-o36qXi2t4Vgxob0BcA5UhtYmX9QVKJod
+
+[2026-02-22 16:53:53] Attempt=default Url=https://www.youtube.com/watch?v=0VQABhYlSNU
+  https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1771829631/ei/H6WbaeXNIaSpsfIPr8OHiA0/ip/2601:645:d00:eb30:3cd2:8319:688b:6090/id/d1540006162548d5/itag/301/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D883830%3Bdur%3D54.566%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1658349539531829/sgovp/clen%3D27134362%3Bdur%3D54.499%3Bgir%3Dyes%3Bitag%3D299%3Blmt%3D1658349561939345/rqh/1/hls_chunk_host/rr1---sn-bvvbaxivnuxqjvhj5nu-n4vz.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/met/1771808031,/mh/tQ/mm/31,29/mn/sn-bvvbaxivnuxqjvhj5nu-n4vz,sn-o097znze/ms/au,rdu/mv/m/mvi/1/pl/39/rms/au,au/initcwndbps/4400000/bui/AVNa5-xOCMx5x3DcwhPTOFvKXa3NcJCnGWOqQPG6WuNAWKjfasavDUevXmeYXbaZqhS-rWS1bPyXd4Kw/spc/6dlaFBvegCx-lEmAGSkeSvaU131nRX9LdLEdecb2UjU05wwSzIQuzxIJldGpOPnfaUPlaNyf/vprv/1/ns/UD2eGs8ihLyD45iczb-Fv8kS/playlist_type/CLEAN/dover/11/txp/5316224/mt/1771807771/fvip/4/keepalive/yes/fexp/51552689,51565116,51565682,51580968/n/mwsZY4uRStdFCw/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,bui,spc,vprv,ns,playlist_type/sig/AJEij0EwRQIgWASQalLwVe0PtoSXtPyUReLHQEETSQd8fkPLpjnClPkCIQD-mmfCoixHVPoGMtiA_mELfLyIT7oCw0rnVrEmCReipw%3D%3D/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRQIhAJchA-G78b_tEsY8tdGq-_TPB5kpBqhyk8piF2ruOeyzAiBb3dtNbvZsMX3xl4wdr8XPB8GkuB2YFenWVMYCq2IlVQ%3D%3D/playlist/index.m3u8
+
+[2026-02-22 17:16:55] Attempt=default Url=https://www.youtube.com/watch?v=scKlMYlsoDY
+  https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1771831011/ei/g6qbabyiMLCVt7EPxLSP0QY/ip/2601:645:d00:eb30:3cd2:8319:688b:6090/id/b1c2a531896ca036/itag/95/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D720454%3Bdur%3D44.466%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1748964134317840/sgovp/clen%3D8175562%3Bdur%3D44.344%3Bgir%3Dyes%3Bitag%3D136%3Blmt%3D1748964538345060/rqh/1/hls_chunk_host/rr3---sn-bvvbaxivnuxqjvhj5nu-n4v6.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/met/1771809411,/mh/Ss/mm/31,29/mn/sn-bvvbaxivnuxqjvhj5nu-n4v6,sn-n4v7sns7/ms/au,rdu/mv/m/mvi/3/pl/39/rms/au,au/initcwndbps/4310000/bui/AVNa5-yeZMkTrZ3EJaXRAHjEZ4pk4jsV9A4vidwZ70m0qEKAXoTciaToyxOdVN0m9Wje49Q4beJK9Pba/spc/6dlaFOg85YEbxJzrN7r3nUw99TcY1owwLKmTZPy_cMPuVhpu5xYH5t4t23uHwkZrwGqr32RS/vprv/1/ns/6nmztdRYHvaK_jX_0MwNLMgS/playlist_type/CLEAN/dover/11/txp/5318224/mt/1771808984/fvip/4/keepalive/yes/fexp/51552689,51565116,51565681,51580968/n/FqHPp9ySP3_rmg/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,bui,spc,vprv,ns,playlist_type/sig/AJEij0EwRAIgF27b-YzvYK-LhXxb41P7YaOpKXl3p0KBVZYWr7HlXvMCIGLrYDTyVB13XTNlA_JHuOhKGLTSZ9fGj9fzvCbRX6Kv/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRgIhAOeqMOJGS901bUMJjN2JUg-_-3Cegeah4yfDjVN-Oa82AiEA64cMD6pVAeYXD1G-avF6567AMcjRa-PuOFy_pEdLvlI%3D/playlist/index.m3u8
+
+[2026-02-22 17:27:36] Attempt=default Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:27:40] Attempt=dash-fallback Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:27:44] Attempt=mp4-fallback Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:27:48] Attempt=client-fallback Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:27:52] Attempt=cookies-edge Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:27:56] Attempt=cookies-chrome Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:28:01] Attempt=cookies-firefox Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:31:10] Attempt=default Url=Battlecry
+  ERROR: [generic] 'Battlecry' is not a valid URL
+
+[2026-02-22 17:31:14] Attempt=dash-fallback Url=Battlecry
+  ERROR: [generic] 'Battlecry' is not a valid URL
+
+[2026-02-22 17:31:19] Attempt=mp4-fallback Url=Battlecry
+  ERROR: [generic] 'Battlecry' is not a valid URL
+
+[2026-02-22 17:31:23] Attempt=client-fallback Url=Battlecry
+  ERROR: [generic] 'Battlecry' is not a valid URL
+
+[2026-02-22 17:31:28] Attempt=cookies-edge Url=Battlecry
+  ERROR: [generic] 'Battlecry' is not a valid URL
+
+[2026-02-22 17:31:31] Attempt=cookies-chrome Url=Battlecry
+  ERROR: [generic] 'Battlecry' is not a valid URL
+
+[2026-02-22 17:31:35] Attempt=cookies-firefox Url=Battlecry
+  ERROR: [generic] 'Battlecry' is not a valid URL
+
+[2026-02-22 17:40:59] Attempt=default Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:41:03] Attempt=dash-fallback Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:41:07] Attempt=mp4-fallback Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:41:11] Attempt=client-fallback Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:41:14] Attempt=cookies-edge Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:41:18] Attempt=cookies-chrome Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:41:22] Attempt=cookies-firefox Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:45:23] Attempt=default Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:45:26] Attempt=dash-fallback Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:45:30] Attempt=mp4-fallback Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:45:34] Attempt=client-fallback Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:45:37] Attempt=cookies-edge Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:45:41] Attempt=cookies-chrome Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:45:44] Attempt=cookies-firefox Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:50:11] Attempt=default Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:50:15] Attempt=dash-fallback Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:50:19] Attempt=mp4-fallback Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:50:22] Attempt=client-fallback Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:50:26] Attempt=cookies-edge Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:50:29] Attempt=cookies-chrome Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:50:33] Attempt=cookies-firefox Url=Otonoke de Creepy Nuts
+  ERROR: [generic] 'Otonoke de Creepy Nuts' is not a valid URL
+
+[2026-02-22 17:51:13] Attempt=default Url=https://www.youtube.com/watch?v=4OxFSy8G5wk
+  https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1771833068/ei/i7KbaYrLNrPWsfIPw8Cg4Qw/ip/2601:645:d00:eb30:3cd2:8319:688b:6090/id/e0ec454b2f06e709/itag/95/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D1459589%3Bdur%3D90.139%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1701808944935702/sgovp/clen%3D10368294%3Bdur%3D90.088%3Bgir%3Dyes%3Bitag%3D136%3Blmt%3D1701809435248031/rqh/1/hls_chunk_host/rr14---sn-bvvbaxivnuxqjvhj5nu-n4ve.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/met/1771811467,/mh/ei/mm/31,29/mn/sn-bvvbaxivnuxqjvhj5nu-n4ve,sn-o097znz7/ms/au,rdu/mv/m/mvi/14/pl/39/rms/au,au/gcr/us/initcwndbps/4422500/bui/AVNa5-ws7jARM-6Ywqwgx8GCC7B8KrI8t-c99QnIxLuJrKg8ZPV8ZhZ_RSqbBboSaxS_SasmgyP3kss9/spc/6dlaFHV0TtSNG2Okg86rHRZOhZUGx8eAvIOz5uM5awqCRFrwYWBmU35b9znXi2lvNLR8dMm5wGmltv_czCes5SlMI3A/vprv/1/ns/kM2O_Nv4RsD_u-NhtVXaN3oS/playlist_type/CLEAN/dover/11/txp/4432434/mt/1771810908/fvip/1/keepalive/yes/fexp/51552689,51565115,51565681,51580968/n/nDX8mwm5HOPfSg/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,gcr,bui,spc,vprv,ns,playlist_type/sig/AJEij0EwRAIgZcUpna-91DPnmvIvWsudkbYiraly-zdWL6Z2TfrXa5wCID_otrawRdTChfnV0w3SPLpgCYIJC3mi9WYzIqsVK8lt/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRAIgdSodwRROtewSr9f-3-v0vY_yK6-p6EKWWRCgK_JyvOQCIBdPKQEwVWJeOWY2ybXL0gVa3DvLN75Cv_3vpIK3i2u1/playlist/index.m3u8
+
+[2026-02-22 18:00:28] Attempt=default Url=https://www.youtube.com/watch?v=Vz4d2Gl3NbM
+  https://rr8---sn-bvvbaxivnuxqjvhj5nu-n4vs.googlevideo.com/videoplayback?expire=1771833624&ei=t7SbaYPjON-Ut7EPkba-yAE&ip=2601%3A645%3Ad00%3Aeb30%3A3cd2%3A8319%3A688b%3A6090&id=o-AErrbPXIn4igW34KZahQnTrAiBkl48uuxF88ymZvCYBG&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1771812023%2C&mh=_9&mm=31%2C29&mn=sn-bvvbaxivnuxqjvhj5nu-n4vs%2Csn-o097znze&ms=au%2Crdu&mv=m&mvi=8&pl=39&rms=au%2Cau&initcwndbps=4233750&bui=AVNa5-yJGFe-5K5AKU8sdOGix6i2Fr3_z7OtLnX9de15qUB7IaRWzeJC0lII2w7TFxz8bPW5UY1HF-Pu&spc=6dlaFCxOt_ZB6wOi68mF&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=1312.577&lmt=1741537875377529&mt=1771811618&fvip=2&fexp=51552689%2C51565115%2C51565682%2C51580968&c=ANDROID_VR&txp=5438534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJEij0EwRgIhAOR-zXergTlEsXLLweteb0FjQ-T8UCCzx9zjEypQ3-5XAiEA24qQsk01bFr8Fb40wczrY6aC8O7T4qRel3V5mu077UE%3D&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRAIgP7UzbK9QWMV4Xs3DClABmUsz1ghtsgzk6kvgZxveCDQCIAbUQyqXysv2wM-cKA77T4eIMZwvNTk3wEceVoIMp51W
+
+[2026-02-22 18:01:02] Attempt=default Url=https://www.youtube.com/watch?v=tvFUkk-3sCI
+  https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1771833656/ei/2LSbabagCOK8sfIPgJD8sAc/ip/2601:645:d00:eb30:3cd2:8319:688b:6090/id/b6f154924fb7b022/itag/301/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D21338046%3Bdur%3D1318.405%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1738674215801747/sgovp/clen%3D484007416%3Bdur%3D1318.349%3Bgir%3Dyes%3Bitag%3D299%3Blmt%3D1738699587596116/rqh/1/hls_chunk_host/rr13---sn-bvvbaxivnuxqjvhj5nu-n4vz.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/met/1771812056,/mh/0Z/mm/31,29/mn/sn-bvvbaxivnuxqjvhj5nu-n4vz,sn-o097znse/ms/au,rdu/mv/m/mvi/13/pl/39/rms/au,au/initcwndbps/4177500/bui/AVNa5-xLdloKjBk_ZHR1WgsN7VJstMKJXAwIJY0KRd0mIEozzH5yr4qP4ugQPtPwsoR0xRx5FY01I8rO/spc/6dlaFPEtjjeGzMCVZ_jWxa2beubcJytqfUFV__yE5wNVH8PLGCollorrs-T3IukXwcg7L0osPbae37KUr5_5KXEcFa0/vprv/1/ns/HZCO5agwOsP0nQZ063bTemoS/playlist_type/CLEAN/dover/11/txp/5535534/mt/1771811618/fvip/5/keepalive/yes/fexp/51552689,51565116,51565682,51580968/n/SKfi_EzAWu7HHA/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,bui,spc,vprv,ns,playlist_type/sig/AJEij0EwRAIgUW76KBXLEqBXJRJCxQcUdfsiRHnG5WD6v9XlrjD6ZwsCIBjO9ApmiyKXWLgp-HzodUQUrZm6N9o4RskvsRdoVdga/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRAIgfa8APP4475mCpC6CcY-LQ31OhU_o_DdLF5CbUXWQVqECIEK9WQoOewqmMebxhTzq559HCAX3wk_f6u4_zlhf6rBc/playlist/index.m3u8
+
+[2026-02-22 18:09:58] Attempt=default Url=https://www.youtube.com/watch?v=YM-taYfDrto
+  https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1771834196/ei/9LabaZrbDJ3ZsfIP24_s8AY/ip/2601:645:d00:eb30:3cd2:8319:688b:6090/id/60cfad6987c3aeda/itag/95/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D393145%3Bdur%3D24.241%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1741730571096543/sgovp/clen%3D6466442%3Bdur%3D24.166%3Bgir%3Dyes%3Bitag%3D136%3Blmt%3D1741730579961357/rqh/1/hls_chunk_host/rr12---sn-bvvbaxivnuxqjvhj5nu-n4vz.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/met/1771812596,/mh/wG/mm/31,29/mn/sn-bvvbaxivnuxqjvhj5nu-n4vz,sn-o097znss/ms/au,rdu/mv/m/mvi/12/pl/39/rms/au,au/initcwndbps/4285000/bui/AVNa5-wekwr_hZF4XygtMGdao8P1jtyuhhfAUGlKNjOiTmMQRlxo7srWb-joPhNQRVNviiheboTCOKOG/spc/6dlaFC9nFtd-FhArNRz65vURCjn4nKu0M9ExWYdnlP6Vk7ILWGiv9pwq9QdheSEbFek_vXL8/vprv/1/ns/_vrl7Kf7ZCUOIFiXQW24cnwS/playlist_type/CLEAN/dover/11/txp/5319224/mt/1771812312/fvip/1/keepalive/yes/fexp/51552689,51565115,51565682,51580968/n/l7_NR3LrG1fC1A/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,bui,spc,vprv,ns,playlist_type/sig/AJEij0EwRgIhAIg3Fncq88z1VitKTPQ5vdaF0xY8L7VcvWM2ueNtMGkyAiEAnrrbvq5qDnYmL51SIn1mOKcRosBfILLw7Dy-LU5ee0k%3D/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRQIhALJIuoT28HPwGX1Bbs9RrN0pwv3HQ1ewBzi0xQWZZwrzAiAkzz9PDQ6UfTnnfJwg1lNLO_Ousg1pSwCWVKHeYqj7Rg%3D%3D/playlist/index.m3u8
+
+[2026-02-22 18:10:49] Attempt=default Url=https://www.youtube.com/watch?v=jUs-ITmi_u4
+  https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1771834246/ei/JrebaeCHM9aZsfIP5cuR6AE/ip/2601:645:d00:eb30:3cd2:8319:688b:6090/id/8d4b3e2139a2feee/itag/94/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D3144293%3Bdur%3D194.234%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1742994311167992/sgovp/clen%3D650799%3Bdur%3D194.080%3Bgir%3Dyes%3Bitag%3D135%3Blmt%3D1742994324117476/rqh/1/hls_chunk_host/rr7---sn-bvvbaxivnuxqjvhj5nu-n4vz.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/met/1771812646,/mh/vm/mm/31,29/mn/sn-bvvbaxivnuxqjvhj5nu-n4vz,sn-n4v7sney/ms/au,rdu/mv/m/mvi/7/pl/39/rms/au,au/initcwndbps/4207500/bui/AVNa5-w5EZNZB_Zg7256H37yUz1kut8v4f8E3QtJmSg3k88DBd8jaK3xFb-b0XO_vwQS1WnQ0KoIiRya/spc/6dlaFI0PePZsVuum5Izc64nd8EFqZv2Jr-TjqdtFNSbszvJjOYmrkxeFqJYOJPgbB1pitvX8/vprv/1/ns/2FWY72HcLkvPqReLFi5OQRoS/playlist_type/CLEAN/dover/11/txp/5432534/mt/1771812080/fvip/4/keepalive/yes/fexp/51514994,51552689,51565115,51565682,51580968/n/GWBvtR0OTYQKzQ/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,bui,spc,vprv,ns,playlist_type/sig/AJEij0EwRQIgT5spqhXRu7yWpoErDEXdmovJntg9EBZfrAGlu7XIRdwCIQDJnfg3RNP-whXqsgddILDsUJ0zVCVgeOdwyEA4-9H6kQ%3D%3D/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRQIhAMYjxMFkaSiUh_eARK8mlvwrAoifAXo7mpMz6vhjehKLAiACmcOXliy82QuikJxQ4MEwF_arT8t47BacSE5HOHmOaw%3D%3D/playlist/index.m3u8
+
+[2026-02-22 18:21:48] Attempt=default Url=Tank!
+  ERROR: [generic] 'Tank!' is not a valid URL
+
+[2026-02-22 18:21:51] Attempt=dash-fallback Url=Tank!
+  ERROR: [generic] 'Tank!' is not a valid URL
+
+[2026-02-22 18:21:55] Attempt=mp4-fallback Url=Tank!
+  ERROR: [generic] 'Tank!' is not a valid URL
+
+[2026-02-22 18:21:58] Attempt=client-fallback Url=Tank!
+  ERROR: [generic] 'Tank!' is not a valid URL
+
+[2026-02-22 18:22:01] Attempt=cookies-edge Url=Tank!
+  ERROR: [generic] 'Tank!' is not a valid URL
+
+[2026-02-22 18:22:04] Attempt=cookies-chrome Url=Tank!
+  ERROR: [generic] 'Tank!' is not a valid URL
+
+[2026-02-22 18:22:09] Attempt=cookies-firefox Url=Tank!
+  ERROR: [generic] 'Tank!' is not a valid URL
+
+[2026-02-22 18:22:30] Attempt=default Url=https://www.youtube.com/watch?v=9Go4J1RaeuM
+  https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1771834945/ei/4bmbaZDLFsCVsfIPxb2CqAM/ip/2601:645:d00:eb30:3cd2:8319:688b:6090/id/f46a3827545a7ae3/itag/95/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D1477705%3Bdur%3D91.254%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1744368295193422/sgovp/clen%3D12632823%3Bdur%3D91.191%3Bgir%3Dyes%3Bitag%3D136%3Blmt%3D1744368299675921/rqh/1/hls_chunk_host/rr16---sn-bvvbaxivnuxqjvhj5nu-n4vz.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/met/1771813345,/mh/vP/mm/31,29/mn/sn-bvvbaxivnuxqjvhj5nu-n4vz,sn-o097znzd/ms/au,rdu/mv/m/mvi/16/pl/39/rms/au,au/initcwndbps/4335000/bui/AVNa5-wAkQfGsV2sNQ1H3DV5mOaQaFKo2qWOSp8G1zesefnftcedPV_6ICyWRg0Wab7T-HmdBjjbUTt0/spc/6dlaFB3wiWD_jFVisccQFpjyVvl9i6glqjN0bIDrK92246mCz01IFbOWiyIuU0BuqhE06G0SU1xpjg8reecGwV7GRro/vprv/1/ns/Qfy40-K8XjDXjjMyhZ7DX4QS/playlist_type/CLEAN/dover/11/txp/5309224/mt/1771812795/fvip/1/keepalive/yes/fexp/51552689,51565116,51565681,51580968/n/dFdderytKLYNbA/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,bui,spc,vprv,ns,playlist_type/sig/AJEij0EwRQIhAJG-jYfvNbDimDH-BD-vc1CNJmNI9SCRoZ5JQ2o3RegHAiAti1ivRTZgIZZPdEwCm7DspXbYiHamR9LiWOcZcI6hMQ%3D%3D/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRgIhAIOVbdxrPgOGvQdlU7wZoVgtvEAkmwACeZJjDkFQn2OjAiEA1l9y9R6E5JfGGCOmsWd994PtjvlaXWddBNkqWOzQrA4%3D/playlist/index.m3u8
+
+[2026-02-22 18:44:00] Attempt=default Url=Opening Credits
+  ERROR: [generic] 'Opening Credits' is not a valid URL
+
+[2026-02-22 18:44:04] Attempt=dash-fallback Url=Opening Credits
+  ERROR: [generic] 'Opening Credits' is not a valid URL
+
+[2026-02-22 18:44:08] Attempt=mp4-fallback Url=Opening Credits
+  ERROR: [generic] 'Opening Credits' is not a valid URL
+
+[2026-02-22 18:44:11] Attempt=client-fallback Url=Opening Credits
+  ERROR: [generic] 'Opening Credits' is not a valid URL
+
+[2026-02-22 18:44:15] Attempt=cookies-edge Url=Opening Credits
+  ERROR: [generic] 'Opening Credits' is not a valid URL
+
+[2026-02-22 18:44:19] Attempt=cookies-chrome Url=Opening Credits
+  ERROR: [generic] 'Opening Credits' is not a valid URL
+
+[2026-02-22 18:44:22] Attempt=cookies-firefox Url=Opening Credits
+  ERROR: [generic] 'Opening Credits' is not a valid URL
+
+[2026-02-22 18:45:02] Attempt=default Url=https://www.youtube.com/watch?v=UFFa0QoHWvE
+  https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1771836297/ei/Kb-baYDPH-PAsfIPu4ye0Qg/ip/2601:645:d00:eb30:3cd2:8319:688b:6090/id/50515ad10a075af1/itag/96/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D3405663%3Bdur%3D210.333%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1762309063114076/sgovp/clen%3D3089105%3Bdur%3D210.320%3Bgir%3Dyes%3Bitag%3D137%3Blmt%3D1762309393475185/rqh/1/hls_chunk_host/rr10---sn-bvvbaxivnuxqjvhj5nu-n4vl.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/cps/822/met/1771814697,/mh/WV/mm/31,29/mn/sn-bvvbaxivnuxqjvhj5nu-n4vl,sn-n4v7snls/ms/au,rdu/mv/m/mvi/10/pl/39/rms/au,au/gcr/us/initcwndbps/4370000/bui/AVNa5-ycBtM2OOdrzVKx4yae2ydv5iZX3GBsDVz9dGaCMLybeJCPXt2dZ2u40cXu_0EtlGERglvYsUZW/spc/6dlaFE1gUh1O1WDOXyy0Yk-kf5dVqXBeh54zLfq_3tBMMyw1P_HzIAOqbo81ZjskeA6M3Byvu7AMj2icB1fvorFr7dA/vprv/1/ns/ENa7kXmNRXkAVFpydrXp1cUS/playlist_type/CLEAN/dover/11/txp/5532534/mt/1771814232/fvip/3/keepalive/yes/fexp/51552689,51565115,51565681,51580968/n/VnDJESKnz6ViSw/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,gcr,bui,spc,vprv,ns,playlist_type/sig/AJEij0EwRQIgfPRT1JPFCv7mpFWF8St-SNE9gX453eyPIJr6jf7GonICIQD4buiweo2NiV4Ssju7SRGttvZlTgrQk5N8hYi7pBgkqg%3D%3D/lsparams/hls_chunk_host,cps,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRAIgFzBN2NNjsIvPN3WzSQPw_feNV306SmZ541psxHJBX9QCIDUTb9CNvL5-jIMK8QuylhAbzNnNGiHq9qbJwOF9AWq3/playlist/index.m3u8
+
+[2026-02-22 18:45:45] Attempt=default Url=https://www.youtube.com/watch?v=9Go4J1RaeuM
+  https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1771836337/ei/Ub-baciyBJv5sfIP9viTwQc/ip/2601:645:d00:eb30:3cd2:8319:688b:6090/id/f46a3827545a7ae3/itag/95/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D1477705%3Bdur%3D91.254%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1744368295193422/sgovp/clen%3D12632823%3Bdur%3D91.191%3Bgir%3Dyes%3Bitag%3D136%3Blmt%3D1744368299675921/rqh/1/hls_chunk_host/rr16---sn-bvvbaxivnuxqjvhj5nu-n4vz.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/met/1771814737,/mh/vP/mm/31,29/mn/sn-bvvbaxivnuxqjvhj5nu-n4vz,sn-o097znzd/ms/au,rdu/mv/m/mvi/16/pl/39/rms/au,au/pcm2/yes/initcwndbps/4307500/bui/AVNa5-zeoMHSaw1QO0J62AjSvLDOR2dpQmVWbPK8zltNIEWXUdJalAdqWjK1TALykq_A2klf9xYm8w_a/spc/6dlaFDut1bR_iPdjoaKUMHZsX5oRYdSZzbG5swKNxoeb4kyVuyP1EguECcVZiqp4SA4C-PA9OtMAC3Te2yKZWcaayF8/vprv/1/ns/_Xon_LOyCKXJWxLQAOHVOMIS/playlist_type/CLEAN/dover/11/txp/5309224/mt/1771814232/fvip/1/keepalive/yes/fexp/51552689,51565116,51565681,51580968/n/bWfc6NoOe9kDkg/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,pcm2,bui,spc,vprv,ns,playlist_type/sig/AJEij0EwRQIhAJLbt_8n1BulArQtv0QgSW7trRRqOTMuesHE3M51yx9xAiA9uhx1pTkYkc9svqNWCtGWbFK-aU9KaInBghc0gEITnA%3D%3D/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRQIhANqHTasyVb8OlT830nZUWtGakm0zJZLUlkg497fDJI72AiBokDG3gruTBtdRJR37t4CyE3GpSavD4edNrzqg3ykGyA%3D%3D/playlist/index.m3u8
+
+[2026-02-22 18:48:30] Attempt=default Url=https://www.youtube.com/watch?v=Cv6tuzHUuuk
+  https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1771836507/ei/-7-bafu1FbGpsfIP5ebkmQ0/ip/2601:645:d00:eb30:3cd2:8319:688b:6090/id/0afeadbb31d4bae9/itag/94/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D3276968%3Bdur%3D202.431%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1714514762854865/sgovp/clen%3D13671484%3Bdur%3D202.368%3Bgir%3Dyes%3Bitag%3D135%3Blmt%3D1714515072812641/rqh/1/hls_chunk_host/rr14---sn-bvvbaxivnuxqjvhj5nu-n4vs.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/cps/1077/met/1771814907,/mh/yH/mm/31,29/mn/sn-bvvbaxivnuxqjvhj5nu-n4vs,sn-o097znsr/ms/au,rdu/mv/m/mvi/14/pl/39/rms/au,au/pcm2/no/gcr/us/initcwndbps/4357500/bui/AVNa5-wlVvoSKHHRhYlmn5RKbJxcwntO4AKITl1-k1-2u7hDf-CRoy_xRyfmGPiaTdCtHuilgY_VXNTw/spc/6dlaFObhWgqCEzf80E1-HJR9HAPcbUx3-sKvB3__8ozlzVixBYgYgXV6JYIVUMDudd11AFnz-vAmvsVqztA_xv1Rh9Q/vprv/1/ns/h8Ia3kJa7-DIfKN-jGg3ma4S/playlist_type/CLEAN/dover/11/txp/4532434/mt/1771814492/fvip/1/keepalive/yes/fexp/51552689,51565116,51565682,51580968/n/SA4XfEFO-lIImg/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,pcm2,gcr,bui,spc,vprv,ns,playlist_type/sig/AJEij0EwRQIgegW3a56_OPgiU9IX_1TzylGodAVNs0_uwBbQyd7ykFYCIQC2bn_YtEcYcjU7YQXGH1f9AXdvX14byG_N9KKZqY95Ow%3D%3D/lsparams/hls_chunk_host,cps,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRAIgcPhYY4lG06VEuVRnTEPtjJdUX98N3z_eGmZp8-9-YcYCIGRnIY8p-xq3VwGkOLWKuOGsSkYzuf2eJZZ2Gf3azyjJ/playlist/index.m3u8
+
+[2026-02-22 18:49:16] Attempt=default Url=https://www.youtube.com/watch?v=YYp7D4qJs2Q
+  https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1771836550/ei/JsCbafrBIvGXsfIPkc-fqQ0/ip/2601:645:d00:eb30:3cd2:8319:688b:6090/id/618a7b0f8a89b364/itag/96/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D3665030%3Bdur%3D226.417%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1706424246812895/sgovp/clen%3D89017170%3Bdur%3D226.351%3Bgir%3Dyes%3Bitag%3D137%3Blmt%3D1706425273609511/rqh/1/hls_chunk_host/rr16---sn-bvvbaxivnuxqjvhj5nu-n4vl.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/met/1771814950,/mh/Wh/mm/31,29/mn/sn-bvvbaxivnuxqjvhj5nu-n4vl,sn-o097znzr/ms/au,rdu/mv/m/mvi/16/pl/39/rms/au,au/force_finished/1/gcr/us/initcwndbps/4430000/bui/AVNa5-wFqH7Qi2eQZcA_4q4uCK8WxZ81VjHqTn3d-jQ1oMzmz84o_GbuA2gJXXyu7bUnMKMB6xS7gyMM/spc/6dlaFGLIZtN2XEi3BJUyLsOzqtWIHOJGNfvQfOMIrM1NeMmkGnTehsySfWVZIZBcKYdGEiFwJ5EpOnXo_zU2NBW4iCY/vprv/1/ns/DDeTB00_7QQteTIya8wyqYkS/playlist_type/CLEAN/dover/11/txp/4432434/mt/1771814492/fvip/2/keepalive/yes/fexp/51552689,51565115,51565681,51580968/n/OsmAO_i13OhDhg/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,force_finished,gcr,bui,spc,vprv,ns,playlist_type/sig/AJEij0EwRQIgUvonAyfx2s9j4WZtIoOvomnPumeaP6zZOIoWlVXO1IgCIQCOEl0gB509LMPrwMI4vcslsO9Q041w2BpRwu6lpS4aBA%3D%3D/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRQIgAYx6HHdBBGxxG4ZspfzycN92H8ppJu-luNodJj2PKaYCIQDROxXN5AxOkhdefybktNzgV7LUcBFleSoToRAeO8oPLQ%3D%3D/playlist/index.m3u8
+
+[2026-02-22 18:56:20] Attempt=default Url=https://www.youtube.com/watch?v=zB6SG6_N8F8
+  https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1771836968/ei/yMGbaeROsoux8g_v2aPgDA/ip/2601:645:d00:eb30:3cd2:8319:688b:6090/id/cc1e921bafcdf05f/itag/96/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D3296495%3Bdur%3D203.638%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1736594800165044/sgovp/clen%3D56344801%3Bdur%3D203.583%3Bgir%3Dyes%3Bitag%3D137%3Blmt%3D1736595723401766/rqh/1/hls_chunk_host/rr11---sn-bvvbaxivnuxqjvhj5nu-n4vz.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/met/1771815368,/mh/WR/mm/31,29/mn/sn-bvvbaxivnuxqjvhj5nu-n4vz,sn-n4v7snse/ms/au,rdu/mv/m/mvi/11/pl/39/rms/au,au/force_finished/1/gcr/us/initcwndbps/4297500/bui/AVNa5-x-KQSUgMtOmLP-rlfNwkYWd_F2iyXc1IMjIaLSm_gldtsnGOyvV3vQDybCOdPRjJt-dKBVTKfU/spc/6dlaFF4ODiK-M4hj1SJgilSzKlfloLB0Pqg-TPs06AowuL4U_Q5yB9fThfAI67Alr4ELR6wcqOFKWb93CnD7VE80vR0/vprv/1/ns/lUN0sTs3qZx9v4sQ_td-xvIS/playlist_type/CLEAN/dover/11/txp/4432534/mt/1771814956/fvip/1/keepalive/yes/fexp/51552689,51565115,51565681,51580968/n/mYRA47VZhpeZPg/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,force_finished,gcr,bui,spc,vprv,ns,playlist_type/sig/AJEij0EwRQIhAJhfN84WxMd2l7Z-i2tug1GCDrIax96Kt_hgBz16JvL6AiBg1DPz5U30FRwLLSxzmOFhPeeLz9VcNUqShdA5byNtRg%3D%3D/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRgIhAPruemgjPIoD-UEyw7azYVmFFQj-HVLnHYSPublz5Z9EAiEAqKM55SLM0iN3zrELxqDOQXKmYO-v08abQs8k6nspD5Y%3D/playlist/index.m3u8
+
+[2026-02-22 19:03:57] Attempt=default Url=Official Announce Trailer
+  ERROR: [generic] 'Official Announce Trailer' is not a valid URL
+
+[2026-02-22 19:04:03] Attempt=dash-fallback Url=Official Announce Trailer
+  ERROR: [generic] 'Official Announce Trailer' is not a valid URL
+
+[2026-02-22 19:04:08] Attempt=mp4-fallback Url=Official Announce Trailer
+  ERROR: [generic] 'Official Announce Trailer' is not a valid URL
+
+[2026-02-22 19:04:13] Attempt=client-fallback Url=Official Announce Trailer
+  ERROR: [generic] 'Official Announce Trailer' is not a valid URL
+
+[2026-02-22 19:04:18] Attempt=cookies-edge Url=Official Announce Trailer
+  ERROR: [generic] 'Official Announce Trailer' is not a valid URL
+
+[2026-02-22 19:04:24] Attempt=cookies-chrome Url=Official Announce Trailer
+  ERROR: [generic] 'Official Announce Trailer' is not a valid URL
+
+[2026-02-22 19:04:28] Attempt=cookies-firefox Url=Official Announce Trailer
+  ERROR: [generic] 'Official Announce Trailer' is not a valid URL
+
+[2026-02-22 19:08:39] Attempt=default Url=https://www.youtube.com/watch?v=OlsfSjXVHF0
+  https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1771837714/ei/scSbadGbM9WXsfIPgeGIiAM/ip/2601:645:d00:eb30:3cd2:8319:688b:6090/id/3a5b1f4a35d51c5d/itag/96/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D27674321%3Bdur%3D1709.940%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1735356832261244/sgovp/clen%3D423761636%3Bdur%3D1709.874%3Bgir%3Dyes%3Bitag%3D137%3Blmt%3D1735357198859016/rqh/1/hls_chunk_host/rr2---sn-bvvbaxivnuxqjvhj5nu-n4vl.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/met/1771816113,/mh/nW/mm/31,29/mn/sn-bvvbaxivnuxqjvhj5nu-n4vl,sn-o097znsr/ms/au,rdu/mv/m/mvi/2/pl/39/rms/au,au/initcwndbps/4351250/bui/AVNa5-w_CSdekyB8wA4XXx5_nvhPIyGIiM2dTs3l6HPF0dDyLPcsX-YUQHqtFtmOcN-80JEwLbSYz6gJ/spc/6dlaFMgHiWkb6xVDXJ6x2F522MzG_fqvOkEYSFIJ0Mw4XqY4nzEhCl3BlzAlv-YpPLE_hGSuojxmcU_Iz72N9q_V1S0/vprv/1/ns/cYwIPepJizrnF5WcPbZSbf8S/playlist_type/CLEAN/dover/11/txp/5432434/mt/1771815673/fvip/2/keepalive/yes/fexp/51552689,51565116,51565682,51580968/n/BLx0zA895JclGA/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,bui,spc,vprv,ns,playlist_type/sig/AJEij0EwRAIgPzPAumq5Zx5Bk9Sqkk7bIsbbnhihKEzbsxWc8FjUJWACIF7T8ppCi-TnatZWTmzTT10JvlWvJM8MGW83R3wgK3fL/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRAIgDVjUQxrAgcQTT_RnF71SQVGMF3C4ZNfCVY4ACw_1wokCIBVa-Ra87Zad7GGAct8wNmfHOFP0XVUwD_WdWw2kf-Zr/playlist/index.m3u8
+
+[2026-02-22 19:12:26] Attempt=default Url=https://www.youtube.com/watch?v=zdfjCivNxGY
+  https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1771837940/ei/lMWbafiQLNSVsfIPiP2xmAk/ip/2601:645:d00:eb30:3cd2:8319:688b:6090/id/cdd7e30a2bcdc466/itag/96/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D2558770%3Bdur%3D158.058%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1755962552401478/sgovp/clen%3D44049893%3Bdur%3D157.991%3Bgir%3Dyes%3Bitag%3D137%3Blmt%3D1755963607226000/rqh/1/hls_chunk_host/rr9---sn-bvvbaxivnuxqjvhj5nu-n4vz.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/met/1771816340,/mh/Zi/mm/31,29/mn/sn-bvvbaxivnuxqjvhj5nu-n4vz,sn-o097znze/ms/au,rdu/mv/m/mvi/9/pl/39/rms/au,au/initcwndbps/4230000/bui/AVNa5-zSL5x7DYdnRJFDXKh3Yt8BeJjY-KHPPlYD5sp11bIYX6y8-qqI1oZ7IsBi4JBFmYBaX72K-ukd/spc/6dlaFNRjh8Pr_ZaCsOWJQe5URqosLyNJkIaqvQYoE6ZDgLm42g5NR6P4BDPXgZaCzYXl_2ZbY1T-uX2AA4zMuLzNTvU/vprv/1/ns/KbJXBgPf_fJPvoTCy1DZDbES/playlist_type/CLEAN/dover/11/txp/4432534/mt/1771815928/fvip/2/keepalive/yes/fexp/51552689,51565116,51565681,51580968/n/ScrY2ZeEupkc8A/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,bui,spc,vprv,ns,playlist_type/sig/AJEij0EwRAIgSML3DVIbn2dGbkSm5M9KZlx4frFgQ08sJgeWglT4lEcCIHjQ5U2KlkTj_gkRWhcP_A8fu3akkkUwfW2KnW_J7jSB/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRAIgE5N6pZI0Kyj_y6thLGyU9utaDQX66mAuRxYDFsb8P-QCID3vsyu88_v97SOD0SoYESpYUvm8Ts9X-jidQR8Ujege/playlist/index.m3u8
+
+[2026-02-22 19:18:50] Attempt=default Url=https://www.youtube.com/watch?v=zdfjCivNxGY
+  https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1771838327/ei/F8ebadjfHdDhsfIPpPPCgQk/ip/2601:645:d00:eb30:3cd2:8319:688b:6090/id/cdd7e30a2bcdc466/itag/96/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D2558770%3Bdur%3D158.058%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1755962552401478/sgovp/clen%3D44049893%3Bdur%3D157.991%3Bgir%3Dyes%3Bitag%3D137%3Blmt%3D1755963607226000/rqh/1/hls_chunk_host/rr9---sn-bvvbaxivnuxqjvhj5nu-n4vz.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/met/1771816727,/mh/Zi/mm/31,29/mn/sn-bvvbaxivnuxqjvhj5nu-n4vz,sn-n4v7snly/ms/au,rdu/mv/m/mvi/9/pl/39/rms/au,au/initcwndbps/4301250/bui/AVNa5-xWmBKdsyWRXKiuRVAwQCbi10lEw60FULZinux_HJukh6X_FBvs9IYNQ2bDD-laIBskQjCbV48x/spc/6dlaFCApE5bDfCdkB_m4v9ewe9WRRDrR-cskMFzZfSdO7BcGkLuielisnQ_ubfxZnt32LhPUBAUCauxly5krci9yqAU/vprv/1/ns/oUDLaQ-J5Aa_eDhoLwG4A34S/playlist_type/CLEAN/dover/11/txp/4432534/mt/1771816173/fvip/5/keepalive/yes/fexp/51552689,51565115,51565682,51580968/n/VCPlyrLbYbRT4Q/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,bui,spc,vprv,ns,playlist_type/sig/AJEij0EwRQIhAKQS4eUB0ZXEgfuZz6P2EezmyJp_D333NIzvdzH0jjVsAiB-ScMGoGFc8CUiWwTILRPKcHupDdzeGoAmcE9k8vJ2aw%3D%3D/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRgIhAOaJutL9TYDb1vAm8Dg47Wc37jUX3goyd7Mn2t0KhvK6AiEA14VvBp9v8akW2SrLEmhM3RdCD-sZHm5L6-E92zKXFMU%3D/playlist/index.m3u8
+
