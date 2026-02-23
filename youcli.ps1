@@ -17,10 +17,12 @@ $script:YtDlpDebugLogPath = Join-Path $script:LogsDir "yt-dlp-debug.log"
 $script:Settings = [ordered]@{
     SearchSource = "ytsearch"
     MaxResults = 5
+    CommandPrefix = "-"
 }
 $script:Bookmarks = @()
 $script:Queue = @()
 $script:RecentPlayedVideos = @()
+$script:RecentInputRequests = @()
 
 $script:ModuleScripts = @(
     "core.ps1",
@@ -35,8 +37,27 @@ $script:ModuleScripts = @(
 foreach ($moduleScript in $script:ModuleScripts) {
     $modulePath = Join-Path $PSScriptRoot ("src\{0}" -f $moduleScript)
     if (Test-Path $modulePath) {
-        . $modulePath
+        try {
+            . $modulePath
+        } catch {
+            throw "Failed loading module '$moduleScript' from '$modulePath': $($_.Exception.Message)"
+        }
     }
+}
+
+if (-not (Get-Command Search-YouTube -ErrorAction SilentlyContinue)) {
+    $searchModulePath = Join-Path $PSScriptRoot "src\search.ps1"
+    if (Test-Path $searchModulePath) {
+        try {
+            . $searchModulePath
+        } catch {
+            throw "Failed loading search module '$searchModulePath': $($_.Exception.Message)"
+        }
+    }
+}
+
+if (-not (Get-Command Search-YouTube -ErrorAction SilentlyContinue)) {
+    throw "Search module did not load correctly. Function 'Search-YouTube' is unavailable."
 }
 
 <#
@@ -64,7 +85,9 @@ function Show-VideoList {
         [string]$Heading = "Items"
     )
 
-    Write-Host ("📋 {0}:" -f $Heading) -ForegroundColor Green
+    if ($Heading -ne "Bookmarks" -and $Heading -ne "Queue") {
+        Write-Host ("📋 {0}:" -f $Heading) -ForegroundColor Green
+    }
     if (-not $VideoList -or $VideoList.Count -eq 0) {
         Write-Host "No items found." -ForegroundColor Yellow
         Write-Host
@@ -96,6 +119,106 @@ function Show-VideoList {
 
 <#
 .SYNOPSIS
+Stores a recent input request.
+
+.DESCRIPTION
+Prepends the raw request text to the shared request-history list and retains
+only the latest five entries.
+
+.PARAMETER Request
+The raw input request text entered by the user.
+#>
+function Add-RecentInputRequest {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$Request
+    )
+
+    if ([string]::IsNullOrWhiteSpace($Request)) {
+        return
+    }
+
+    $script:RecentInputRequests = @($Request) + @($script:RecentInputRequests)
+    if ($script:RecentInputRequests.Count -gt 5) {
+        $script:RecentInputRequests = @($script:RecentInputRequests | Select-Object -First 5)
+    }
+}
+
+<#
+.SYNOPSIS
+Shows recent input requests in low-opacity style.
+
+.DESCRIPTION
+Renders the latest request-history entries using DarkGray text so they appear
+as secondary context beneath command hints.
+#>
+function Show-RecentInputRequests {
+    if (-not $script:RecentInputRequests -or $script:RecentInputRequests.Count -eq 0) {
+        return
+    }
+
+    Write-Host "Recent:" -ForegroundColor DarkGray
+    foreach ($recentRequest in $script:RecentInputRequests) {
+        Write-Host $recentRequest -ForegroundColor DarkGray
+    }
+}
+
+<#
+.SYNOPSIS
+Returns the active command prefix.
+
+.DESCRIPTION
+Provides a safe command prefix string from settings, defaulting to '-' when the
+stored value is missing or blank.
+#>
+function Get-CommandPrefix {
+    $prefix = "-"
+    if ($script:Settings -and $script:Settings.Contains("CommandPrefix")) {
+        $configured = [string]$script:Settings.CommandPrefix
+        if (-not [string]::IsNullOrWhiteSpace($configured)) {
+            $prefix = $configured
+        }
+    }
+    return $prefix
+}
+
+<#
+.SYNOPSIS
+Normalizes a user request command token.
+
+.DESCRIPTION
+Converts a token that starts with the current command prefix into the internal
+hyphen form used by command switches (for example, '!play' becomes '-play').
+Returns null if the token does not start with the active prefix.
+
+.PARAMETER CommandToken
+The raw first token from an input request.
+#>
+function ConvertTo-InternalCommand {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$CommandToken
+    )
+
+    $prefix = Get-CommandPrefix
+    if ([string]::IsNullOrWhiteSpace($CommandToken)) {
+        return $null
+    }
+
+    if (-not $CommandToken.StartsWith($prefix, [System.StringComparison]::Ordinal)) {
+        return $null
+    }
+
+    $commandName = $CommandToken.Substring($prefix.Length).Trim()
+    if ([string]::IsNullOrWhiteSpace($commandName)) {
+        return $null
+    }
+
+    return ("-{0}" -f $commandName.ToLower())
+}
+
+<#
+.SYNOPSIS
 Runs the main interactive menu loop for YouCLI.
 
 .DESCRIPTION
@@ -105,8 +228,10 @@ or queue). The loop only exits when the user selects the explicit exit option.
 #>
 function Start-MainMenu {
     while ($true) {
+        Sync-QueueWithVlcPlayback
         Clear-Host
         Show-YouCliBanner
+        Write-Host "Main Menu" -ForegroundColor Red
         Write-Host "[1] Search"
         Write-Host "[2] Settings"
         Write-Host "[3] Bookmarks"

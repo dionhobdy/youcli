@@ -150,13 +150,13 @@ function Start-VlcPlayback {
 		return
 	}
 
-	$vlcArgs = @("--width=800", "--height=450", "--network-caching=1500", $PlaybackUrl)
+	$vlcArgs = @("--one-instance", "--width=800", "--height=450", "--network-caching=1500", $PlaybackUrl)
 	$vlcProcess = Start-Process -FilePath $script:VlcCommand -ArgumentList $vlcArgs -PassThru
 
 	Start-Sleep -Seconds 2
 	if ($vlcProcess.HasExited) {
 		Write-Host "VLC closed unexpectedly. Retrying with a simpler launch..." -ForegroundColor Yellow
-		Start-Process -FilePath $script:VlcCommand -ArgumentList @("--width=800", "--height=450", $FallbackUrl) | Out-Null
+		Start-Process -FilePath $script:VlcCommand -ArgumentList @("--one-instance", "--width=800", "--height=450", $FallbackUrl) | Out-Null
 	}
 }
 

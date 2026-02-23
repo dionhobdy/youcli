@@ -8,97 +8,129 @@ This file is dot-sourced by the main script.
 Runs the interactive bookmarks menu.
 
 .DESCRIPTION
-Provides bookmark management operations including listing, adding, playback,
-removal, and full clear actions. User input is validated for required fields
-and valid item indexes before persistence updates are applied.
+Provides bookmark management operations through prefixed commands, including
+display, add, play, remove, and clear actions. Shows command hints plus recent
+played history and validates request arguments before mutating data.
 #>
 function Start-BookmarksMenu {
 	while ($true) {
-		Write-Host "=== Bookmarks ===" -ForegroundColor Cyan
-		Write-Host "[1] View bookmarks"
-		Write-Host "[2] Add bookmark"
-		Write-Host "[3] Play bookmark"
-		Write-Host "[4] Remove bookmark"
-		Write-Host "[5] Clear bookmarks"
-		Write-Host "[6] Back to Main Menu"
-		Write-Host
+		$prefix = Get-CommandPrefix
+		Clear-Host
+		Show-YouCliBanner
+		Write-Host "Bookmarks" -ForegroundColor Red
+		if (-not $script:Bookmarks -or $script:Bookmarks.Count -eq 0) {
+			Write-Host ("No bookmarks saved. Use {0}back to return to Main Menu." -f $prefix) -ForegroundColor Yellow
+			Write-Host
+		} else {
+			Show-VideoList -VideoList $script:Bookmarks -Heading "Bookmarks"
+		}
 
-		$choice = Read-Host "Choose an option"
-		switch ($choice.Trim()) {
-			"1" {
-				Show-VideoList -VideoList $script:Bookmarks -Heading "Bookmarks"
+		Write-Host ("prefix: {0}" -f $prefix) -ForegroundColor DarkGray
+		Write-Host "add back clear display play remove" -ForegroundColor DarkGray
+		Write-Host "i.e. [prefix]play [number]" -ForegroundColor DarkGray
+		Show-RecentInputRequests
+
+		$choice = Read-Host "Input Request"
+		if ([string]::IsNullOrWhiteSpace($choice)) {
+			Write-Host "Please enter a value." -ForegroundColor Yellow
+			Start-Sleep -Milliseconds 700
+			continue
+		}
+		Add-RecentInputRequest -Request $choice
+
+		$requestParts = $choice.Trim() -split '\s+', 2
+		$requestCommand = ConvertTo-InternalCommand -CommandToken $requestParts[0]
+		$requestArg = ""
+		if ($requestParts.Count -ge 2) {
+			$requestArg = $requestParts[1].Trim()
+		}
+
+		if ([string]::IsNullOrWhiteSpace($requestCommand)) {
+			Write-Host ("Invalid request. Use: {0}add, {0}play N, {0}remove N, {0}clear, {0}display, {0}back" -f $prefix) -ForegroundColor Yellow
+			Start-Sleep -Milliseconds 900
+			continue
+		}
+
+		$resolveIndex = {
+			param([string]$rawIndex)
+			[int]$index = 0
+			if (-not [int]::TryParse($rawIndex, [ref]$index) -or $index -lt 1 -or $index -gt $script:Bookmarks.Count) {
+				Write-Host "Invalid selection index." -ForegroundColor Yellow
+				return $null
 			}
-			"2" {
+			return $index
+		}
+
+		switch ($requestCommand) {
+			"-display" { }
+			"-add" {
 				$title = Read-Host "Bookmark title"
 				$url = Read-Host "Bookmark URL"
 				if ([string]::IsNullOrWhiteSpace($title) -or [string]::IsNullOrWhiteSpace($url)) {
 					Write-Host "Title and URL are required." -ForegroundColor Yellow
-				} else {
-					$script:Bookmarks += [PSCustomObject]@{
-						Title = $title.Trim()
-						Url = $url.Trim()
-					}
-					Save-Bookmarks
-				}
-				Write-Host
-			}
-			"3" {
-				if (-not $script:Bookmarks -or $script:Bookmarks.Count -eq 0) {
-					Write-Host "No bookmarks available." -ForegroundColor Yellow
-					Write-Host
+					Start-Sleep -Milliseconds 900
 					continue
 				}
 
-				Show-VideoList -VideoList $script:Bookmarks -Heading "Bookmarks"
-				$selection = Read-Host "Enter bookmark number"
-				[int]$index = 0
-				if (-not [int]::TryParse($selection, [ref]$index) -or $index -lt 1 -or $index -gt $script:Bookmarks.Count) {
-					Write-Host "Invalid selection." -ForegroundColor Yellow
-					Write-Host
+				$script:Bookmarks += [PSCustomObject]@{
+					Title = $title.Trim()
+					Url = $url.Trim()
+				}
+				Save-Bookmarks
+			}
+			"-play" {
+				if (-not $script:Bookmarks -or $script:Bookmarks.Count -eq 0) {
+					Write-Host ("No bookmarks saved. Use {0}back to return to Main Menu." -f $prefix) -ForegroundColor Yellow
+					Start-Sleep -Milliseconds 900
+					continue
+				}
+
+				$index = & $resolveIndex $requestArg
+				if ($null -eq $index) {
+					Start-Sleep -Milliseconds 900
 					continue
 				}
 
 				$selected = $script:Bookmarks[$index - 1]
 				Play-VideoObject -Video $selected
 			}
-			"4" {
+			"-remove" {
 				if (-not $script:Bookmarks -or $script:Bookmarks.Count -eq 0) {
-					Write-Host "No bookmarks to remove." -ForegroundColor Yellow
-					Write-Host
+					Write-Host ("No bookmarks saved. Use {0}back to return to Main Menu." -f $prefix) -ForegroundColor Yellow
+					Start-Sleep -Milliseconds 900
 					continue
 				}
 
-				Show-VideoList -VideoList $script:Bookmarks -Heading "Bookmarks"
-				$selection = Read-Host "Enter bookmark number to remove"
-				[int]$index = 0
-				if ([int]::TryParse($selection, [ref]$index) -and $index -ge 1 -and $index -le $script:Bookmarks.Count) {
-					$newBookmarks = @()
-					for ($i = 0; $i -lt $script:Bookmarks.Count; $i++) {
-						if ($i -ne ($index - 1)) {
-							$newBookmarks += $script:Bookmarks[$i]
-						}
-					}
-					$script:Bookmarks = $newBookmarks
-					Save-Bookmarks
-					Write-Host "Bookmark removed." -ForegroundColor Green
-				} else {
-					Write-Host "Invalid selection." -ForegroundColor Yellow
+				$index = & $resolveIndex $requestArg
+				if ($null -eq $index) {
+					Start-Sleep -Milliseconds 900
+					continue
 				}
-				Write-Host
+
+				$newBookmarks = @()
+				for ($i = 0; $i -lt $script:Bookmarks.Count; $i++) {
+					if ($i -ne ($index - 1)) {
+						$newBookmarks += $script:Bookmarks[$i]
+					}
+				}
+				$script:Bookmarks = $newBookmarks
+				Save-Bookmarks
+				Write-Host "Bookmark removed permanently." -ForegroundColor Green
+				Start-Sleep -Milliseconds 700
 			}
-			"5" {
+			"-clear" {
 				$confirm = Read-Host "Clear all bookmarks? (y/n)"
 				if ($confirm.Trim().ToLower() -eq "y") {
 					$script:Bookmarks = @()
 					Save-Bookmarks
-					Write-Host "Bookmarks cleared." -ForegroundColor Green
+					Write-Host "All bookmarks removed permanently." -ForegroundColor Green
+					Start-Sleep -Milliseconds 700
 				}
-				Write-Host
 			}
-			"6" { return }
+			"-back" { return }
 			default {
-				Write-Host "Invalid option." -ForegroundColor Yellow
-				Write-Host
+				Write-Host ("Invalid request. Use: {0}add, {0}play N, {0}remove N, {0}clear, {0}display, {0}back" -f $prefix) -ForegroundColor Yellow
+				Start-Sleep -Milliseconds 900
 			}
 		}
 	}

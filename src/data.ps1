@@ -44,11 +44,18 @@ function Initialize-YouCliData {
                 $max = [int]$loadedSettings.MaxResults
                 $script:Settings.MaxResults = [Math]::Min([Math]::Max($max, 1), 25)
             }
+            if ($loadedSettings.PSObject.Properties.Name -contains "CommandPrefix") {
+                $prefix = [string]$loadedSettings.CommandPrefix
+                if (-not [string]::IsNullOrWhiteSpace($prefix) -and -not ($prefix -match '\s')) {
+                    $script:Settings.CommandPrefix = $prefix
+                }
+            }
         }
     } catch {
         $script:Settings = [ordered]@{
             SearchSource = "ytsearch"
             MaxResults = 5
+            CommandPrefix = "-"
         }
         $script:Settings | ConvertTo-Json | Set-Content -Path $script:SettingsPath -Encoding UTF8
     }
