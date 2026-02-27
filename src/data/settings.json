@@ -1,5 +1,5 @@
 ﻿{
-    "SearchSource":  "ytsearch",
+    "SearchSource":  "ytsearchdate",
     "MaxResults":  10,
-    "CommandPrefix":  "-"
+    "CommandPrefix":  "~"
 }

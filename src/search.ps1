@@ -150,6 +150,54 @@ function Format-VideoCount {
     }
 }
 
+function Format-VideoDescriptionPreview {
+    param([string]$DescriptionText)
+
+    if ([string]::IsNullOrWhiteSpace($DescriptionText)) {
+        return "Description unavailable."
+    }
+
+    $normalized = $DescriptionText -replace "`r`n", "`n"
+    $normalized = $normalized.Trim()
+
+    if ($normalized.Length -gt 700) {
+        $normalized = $normalized.Substring(0, 697) + "..."
+    }
+
+    return $normalized
+}
+
+function Format-VideoLength {
+    param([object]$DurationSeconds, [string]$DurationString)
+
+    if (-not [string]::IsNullOrWhiteSpace($DurationString)) {
+        return $DurationString.Trim()
+    }
+
+    if ($null -eq $DurationSeconds) {
+        return "Unknown"
+    }
+
+    try {
+        $total = [int64]$DurationSeconds
+        if ($total -lt 0) {
+            return "Unknown"
+        }
+
+        $hours = [math]::Floor($total / 3600)
+        $minutes = [math]::Floor(($total % 3600) / 60)
+        $seconds = $total % 60
+
+        if ($hours -gt 0) {
+            return ("{0}:{1:D2}:{2:D2}" -f $hours, $minutes, $seconds)
+        }
+
+        return ("{0}:{1:D2}" -f $minutes, $seconds)
+    } catch {
+        return "Unknown"
+    }
+}
+
 function Get-TopLikedComments {
     param(
         [object]$Comments,
@@ -229,7 +277,9 @@ function Get-SearchVideoDetails {
         Title = $FallbackTitle
         ChannelName = $FallbackChannel
         Timestamp = "Unknown"
+        Length = "Unknown"
         ThumbnailUrl = ""
+        Description = "Description unavailable."
         ViewCount = "Unknown"
         LikeCount = "Unknown"
         TopComments = @()
@@ -261,7 +311,9 @@ function Get-SearchVideoDetails {
         Title = $title
         ChannelName = $channel
         Timestamp = (Format-VideoTimestamp -Timestamp $videoData.release_timestamp -UploadDate $videoData.upload_date)
+        Length = (Format-VideoLength -DurationSeconds $videoData.duration -DurationString ([string]$videoData.duration_string))
         ThumbnailUrl = [string]$videoData.thumbnail
+        Description = (Format-VideoDescriptionPreview -DescriptionText ([string]$videoData.description))
         ViewCount = (Format-VideoCount -CountValue $videoData.view_count)
         LikeCount = (Format-VideoCount -CountValue $videoData.like_count)
         TopComments = (Get-TopLikedComments -Comments $videoData.comments -Limit 3)
@@ -822,9 +874,11 @@ function Search-YouTube {
                         Write-Host ("Enter a search query for YouTube: {0}" -f $query)
                         Write-Host
                         Write-Host ("{0} - {1}" -f $details.Title, $details.ChannelName)
-                        Write-Host $details.Timestamp
+                        Write-Host ("{0} | {1}" -f $details.Timestamp, $details.Length)
 
-                        Show-InlineThumbnailOrLink -ThumbnailUrl $details.ThumbnailUrl
+                        $null = Show-InlineThumbnailOrLink -ThumbnailUrl $details.ThumbnailUrl
+                        Write-Host
+                        Write-Host $details.Description -ForegroundColor DarkGray
 
                         Write-Host ("{0} views - {1} likes" -f $details.ViewCount, $details.LikeCount)
                         if ($details.TopComments -and $details.TopComments.Count -gt 0) {
@@ -837,7 +891,7 @@ function Search-YouTube {
                         }
                         Write-Host
                         Write-Host ("prefix: {0}" -f $prefix) -ForegroundColor DarkGray
-                        Write-Host "back bookmark copyurl display menu play queue" -ForegroundColor DarkGray
+                        Write-Host "back bookmark copyurl menu play queue" -ForegroundColor DarkGray
                         Write-Host "i.e. [prefix]back" -ForegroundColor DarkGray
 
                         if ($script:RecentPlayedVideos -and $script:RecentPlayedVideos.Count -gt 0) {
@@ -862,7 +916,7 @@ function Search-YouTube {
                         }
 
                         if ([string]::IsNullOrWhiteSpace($detailCommand)) {
-                            Write-Host ("Invalid request. Use: {0}play N, {0}queue N, {0}bookmark N, {0}display N, {0}copyurl N, {0}back, {0}menu, {0}exit" -f $prefix) -ForegroundColor Yellow
+                            Write-Host ("Invalid request. Use: {0}play N, {0}queue N, {0}bookmark N, {0}copyurl N, {0}back, {0}menu, {0}exit" -f $prefix) -ForegroundColor Yellow
                             continue detailLoop
                         }
 
@@ -876,14 +930,6 @@ function Search-YouTube {
                             "-exit" {
                                 Write-Host "Exiting YouCLI..." -ForegroundColor Cyan
                                 exit 0
-                            }
-                            "-display" {
-                                $nextIndex = & $resolveIndex $detailArg
-                                if ($null -eq $nextIndex) {
-                                    continue detailLoop
-                                }
-                                $selectedIndex = $nextIndex
-                                continue detailLoop
                             }
                             "-play" {
                                 $targetIndex = $selectedIndex
@@ -956,7 +1002,7 @@ function Search-YouTube {
                                 continue detailLoop
                             }
                             default {
-                                Write-Host ("Invalid request. Use: {0}play N, {0}queue N, {0}bookmark N, {0}display N, {0}copyurl N, {0}back, {0}menu, {0}exit" -f $prefix) -ForegroundColor Yellow
+                                Write-Host ("Invalid request. Use: {0}play N, {0}queue N, {0}bookmark N, {0}copyurl N, {0}back, {0}menu, {0}exit" -f $prefix) -ForegroundColor Yellow
                                 continue detailLoop
                             }
                         }
